@@ -1,9 +1,9 @@
 services:
   postegres_keycloak:
-    container_name: postegres_keycloak
+    container_name: keycloak
     image: postgres:15
     ports:
-      - '5433:5432'
+      - '5432:5432'
     environment:
       POSTGRES_DB: postegres
       POSTGRES_USER: user
